@@ -2,8 +2,10 @@
 
 A Dockerfile for Sonatype Nexus Repository Manager 3
 
-This fork is to make the Dockerfile a bit more configurable and try running the application in Alpine to see if it can 
-be a little smaller
+This fork is to make the Dockerfile a bit more configurable and try running the application in Alpine as Alpine saves 
+about 200MB on the image size.
+
+Branch not worth is at Alpine requires installation of most of Glibc to enable Java to run. 
 
 To run, binding the exposed port 8081 to the host.
 

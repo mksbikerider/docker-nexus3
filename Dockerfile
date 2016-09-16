@@ -29,7 +29,7 @@ RUN mkdir -p /opt/sonatype/nexus \
     https://download.sonatype.com/nexus/3/nexus-${NEXUS_VERSION}-unix.tar.gz \
   | gunzip \
   | tar x -C /opt/sonatype/nexus --strip-components=1 nexus-${NEXUS_VERSION} \
-  && chown -R root:root /opt/sonatype/nexus 
+  && chown -R root:root /opt/sonatype/nexus
 
 ## configure nexus runtime env
 RUN sed \
