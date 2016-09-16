@@ -1,14 +1,14 @@
 FROM       centos:centos7
-MAINTAINER Sonatype <cloud-ops@sonatype.com>
+MAINTAINER Michael Sutherland "mike@msutherland.name"
 
 ENV NEXUS_DATA /nexus-data
 
-ENV NEXUS_VERSION 3.0.2-02
+ARG NEXUS_VERSION="3.0.2-02"
 
 ENV JAVA_HOME /opt/java
-ENV JAVA_VERSION_MAJOR 8
-ENV JAVA_VERSION_MINOR 102
-ENV JAVA_VERSION_BUILD 14
+ARG JAVA_VERSION_MAJOR=8
+ARG JAVA_VERSION_MINOR=102
+ARG JAVA_VERSION_BUILD=14
 
 RUN yum install -y \
   curl tar \
