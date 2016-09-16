@@ -1,6 +1,9 @@
-# sonatype/nexus3
+# Based on sonatype/nexus3
 
-A Dockerfile for Sonatype Nexus Repository Manager 3, based on CentOS.
+A Dockerfile for Sonatype Nexus Repository Manager 3
+
+This fork is to make the Dockerfile a bit more configurable and try running the application in Alpine to see if it can 
+be a little smaller
 
 To run, binding the exposed port 8081 to the host.
 
